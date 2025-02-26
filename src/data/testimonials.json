@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "position": "Project Manager at TechCorp",
+      "company": "TechCorp",
+      "testimonial": "One of the most dedicated and skilled developers I've worked with. Their attention to detail and problem-solving abilities made our project a success. They consistently delivered high-quality work ahead of schedule.",
+      "image": "/assets/images/testimonials/sarah.jpg"
+    },
+    {
+      "id": 2,
+      "name": "David Chen",
+      "position": "CTO",
+      "company": "StartupBoost",
+      "testimonial": "We hired them to redesign our outdated website, and the results exceeded our expectations. Not only did they create a beautiful, responsive design, but they also improved our site performance significantly. Our conversion rates have increased by 35% since the launch.",
+      "image": "/assets/images/testimonials/david.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Emily Rodriguez",
+      "position": "Frontend Lead",
+      "company": "InnovateDesign",
+      "testimonial": "Their code is clean, well-documented, and follows best practices. As a team lead, I appreciate developers who can produce maintainable code that others can easily understand and build upon. Would definitely recommend for any web development project.",
+      "image": "/assets/images/testimonials/emily.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Michael Taylor",
+      "position": "E-commerce Director",
+      "company": "RetailFuture",
+      "testimonial": "The e-commerce platform they built for us has been a game-changer for our business. The user interface is intuitive, and the backend management system makes our daily operations so much more efficient. It's been six months since launch, and we've had zero major issues.",
+      "image": "/assets/images/testimonials/michael.jpg"
+    }
+  ]

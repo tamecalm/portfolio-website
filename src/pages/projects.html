@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore my portfolio of web development projects showcasing various technologies and solutions.">
+  <meta name="keywords" content="web development, portfolio, projects, case studies, web applications">
+  <meta name="author" content="Your Name">
+  
+  <title>Projects | Your Name - Web Developer</title>
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Projects | Your Name - Web Developer">
+  <meta property="og:description" content="Explore my portfolio of web development projects showcasing various technologies and solutions.">
+  <meta property="og:image" content="https://yourdomain.com/assets/images/projects/featured-project.jpg">
+  <meta property="og:url" content="https://yourdomain.com/projects.html">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <!-- Will be populated by Header component -->
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">My Projects</h1>
+        <div class="breadcrumbs">
+          <a href="/">Home</a> / <span>Projects</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Filter -->
+    <section class="section projects-filter-section">
+      <div class="container">
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section projects-grid-section">
+      <div class="container">
+        <div class="projects-grid" id="all-projects-grid">
+          <!-- Will be populated dynamically from projects.json -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-container">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-project-title"></h2>
+          <button class="modal-close" aria-label="Close modal">&times;</button>
+        </div>
+        <div class="modal-content" id="modal-project-content">
+          <!-- Will be populated dynamically when a project is clicked -->
+        </div>
+        <div class="modal-footer">
+          <a href="#" id="modal-demo-link" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Demo</a>
+          <a href="#" id="modal-code-link" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact CTA -->
+    <section class="section contact-cta-section">
+      <div class="container">
+        <h2 class="cta-title">Have a project in mind?</h2>
+        <p class="cta-description">Let's create something amazing together.</p>
+        <a href="/contact.html" class="btn btn-primary btn-large">Start a Project</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <!-- Will be populated by Footer component -->
+  </footer>
+
+  <!-- Project modal functionality will be handled by modal.js -->
+  <script>
+    // This script will be replaced by webpack's bundled scripts
+    // It's here just for reference of what needs to happen
+    document.addEventListener('DOMContentLoaded', () => {
+      // Filter functionality
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          
+          // Add active class to clicked button
+          button.classList.add('active');
+          
+          // Get filter value
+          const filter = button.getAttribute('data-filter');
+          
+          // Filter projects
+          // This will be implemented in the main.js file
+          // filterProjects(filter);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

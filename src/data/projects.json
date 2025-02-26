@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "description": "A fully responsive e-commerce website built with React and Node.js. Features include user authentication, product filtering, shopping cart, payment integration, and admin dashboard.",
+      "technologies": ["React", "Node.js", "Express", "MongoDB", "Redux", "Stripe API"],
+      "image": "/assets/images/projects/ecommerce.jpg",
+      "demoLink": "https://ecommerce-demo.yourdomain.com",
+      "codeLink": "https://github.com/yourusername/ecommerce-platform",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Task Management Application",
+      "description": "A productivity app for managing tasks and projects with team collaboration features. Includes drag-and-drop interfaces, deadline tracking, and notification system.",
+      "technologies": ["Vue.js", "Firebase", "Vuex", "Tailwind CSS", "PWA"],
+      "image": "/assets/images/projects/task-manager.jpg",
+      "demoLink": "https://taskmanager.yourdomain.com",
+      "codeLink": "https://github.com/yourusername/task-management-app",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Weather Dashboard",
+      "description": "A weather application that provides real-time weather data and forecasts for any location. Features interactive maps, graphs for historical data, and weather alerts.",
+      "technologies": ["JavaScript", "HTML5", "CSS3", "OpenWeather API", "Chart.js", "Geolocation API"],
+      "image": "/assets/images/projects/weather-app.jpg",
+      "demoLink": "https://weather.yourdomain.com",
+      "codeLink": "https://github.com/yourusername/weather-dashboard",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "Portfolio Website",
+      "description": "A personal portfolio website showcasing my projects and skills. Built with modern web technologies and featuring responsive design, animations, and contact form.",
+      "technologies": ["HTML5", "SCSS", "JavaScript", "Webpack", "Animation Libraries"],
+      "image": "/assets/images/projects/portfolio.jpg",
+      "demoLink": "https://www.yourdomain.com",
+      "codeLink": "https://github.com/yourusername/portfolio-website",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Fitness Tracking App",
+      "description": "A mobile-first web application for tracking workouts, nutrition, and fitness goals. Includes progress visualization, custom workout plans, and social sharing features.",
+      "technologies": ["React Native", "Node.js", "Express", "MongoDB", "Chart.js", "OAuth"],
+      "image": "/assets/images/projects/fitness-app.jpg",
+      "demoLink": "https://fitness.yourdomain.com",
+      "codeLink": "https://github.com/yourusername/fitness-tracker",
+      "featured": true
+    }
+  ]

@@ -1,0 +1,115 @@
+{
+    "technical": [
+      {
+        "category": "Frontend Development",
+        "skills": [
+          {
+            "name": "HTML5",
+            "level": 90,
+            "icon": "html5"
+          },
+          {
+            "name": "CSS3/SCSS",
+            "level": 85,
+            "icon": "css3"
+          },
+          {
+            "name": "JavaScript (ES6+)",
+            "level": 88,
+            "icon": "javascript"
+          },
+          {
+            "name": "React",
+            "level": 85,
+            "icon": "react"
+          },
+          {
+            "name": "Vue.js",
+            "level": 70,
+            "icon": "vuejs"
+          },
+          {
+            "name": "TypeScript",
+            "level": 75,
+            "icon": "typescript"
+          },
+          {
+            "name": "Responsive Design",
+            "level": 90,
+            "icon": "mobile"
+          }
+        ]
+      },
+      {
+        "category": "Backend Development",
+        "skills": [
+          {
+            "name": "Node.js",
+            "level": 80,
+            "icon": "nodejs"
+          },
+          {
+            "name": "Express",
+            "level": 78,
+            "icon": "server"
+          },
+          {
+            "name": "MongoDB",
+            "level": 75,
+            "icon": "database"
+          },
+          {
+            "name": "SQL",
+            "level": 70,
+            "icon": "database"
+          },
+          {
+            "name": "RESTful APIs",
+            "level": 85,
+            "icon": "api"
+          }
+        ]
+      },
+      {
+        "category": "Tools & Technologies",
+        "skills": [
+          {
+            "name": "Git/GitHub",
+            "level": 85,
+            "icon": "github"
+          },
+          {
+            "name": "Webpack",
+            "level": 75,
+            "icon": "webpack"
+          },
+          {
+            "name": "Docker",
+            "level": 65,
+            "icon": "docker"
+          },
+          {
+            "name": "Jest/Testing Library",
+            "level": 70,
+            "icon": "test"
+          },
+          {
+            "name": "CI/CD",
+            "level": 68,
+            "icon": "devops"
+          }
+        ]
+      }
+    ],
+    "soft": [
+      "Problem Solving",
+      "Team Collaboration",
+      "Communication",
+      "Time Management",
+      "Adaptability",
+      "Critical Thinking",
+      "Attention to Detail",
+      "Project Management",
+      "User-Centered Design"
+    ]
+  }

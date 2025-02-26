@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with me for web development projects, collaborations, or inquiries.">
+  <meta name="keywords" content="contact, web developer, hire, freelance, project inquiry">
+  <meta name="author" content="Your Name">
+  
+  <title>Contact | Your Name - Web Developer</title>
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Contact | Your Name - Web Developer">
+  <meta property="og:description" content="Get in touch with me for web development projects, collaborations, or inquiries.">
+  <meta property="og:image" content="https://yourdomain.com/assets/images/profile.jpg">
+  <meta property="og:url" content="https://yourdomain.com/contact.html">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <!-- Will be populated by Header component -->
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Contact Me</h1>
+        <div class="breadcrumbs">
+          <a href="/">Home</a> / <span>Contact</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2 class="contact-heading">Let's Connect</h2>
+            <p class="contact-description">
+              Have a project in mind or want to discuss a potential collaboration? 
+              Feel free to reach out using the form or through any of the channels below.
+            </p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="icon-envelope"></i>
+                </div>
+                <div class="method-details">
+                  <h3 class="method-title">Email</h3>
+                  <p class="method-value">
+                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                  </p>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="icon-phone"></i>
+                </div>
+                <div class="method-details">
+                  <h3 class="method-title">Phone</h3>
+                  <p class="method-value">
+                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                  </p>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="icon-map-marker"></i>
+                </div>
+                <div class="method-details">
+                  <h3 class="method-title">Location</h3>
+                  <p class="method-value">City, State/Province, Country</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <h3 class="social-heading">Follow Me</h3>
+              <div class="social-icons">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <i class="icon-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <i class="icon-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <i class="icon-twitter"></i>
+                </a>
+                <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <i class="icon-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <h2 class="form-heading">Send Me a Message</h2>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-input" required placeholder="Your Name">
+                <div class="form-error" id="name-error"></div>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" required placeholder="your.email@example.com">
+                <div class="form-error" id="email-error"></div>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" required placeholder="Project Inquiry">
+                <div class="form-error" id="subject-error"></div>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" rows="5" required placeholder="Tell me about your project or inquiry..."></textarea>
+                <div class="form-error" id="message-error"></div>
+              </div>
+              
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary">
+                  <span class="btn-text">Send Message</span>
+                  <span class="btn-icon">
+                    <i class="icon-paper-plane"></i>
+                  </span>
+                </button>
+              </div>
+              
+              <div class="form-feedback" id="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section (Optional) -->
+    <section class="section map-section">
+      <div class="container">
+        <div class="map-container">
+          <!-- Replace with your preferred map embed code -->
+          <div class="map-placeholder">
+            <p>Map will be embedded here. Use Google Maps, OpenStreetMap, or other mapping service of your choice.</p>
+            <!-- Example: 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3..." width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section (Optional) -->
+    <section class="section faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Common questions about working with me</p>
+        </div>
+        
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What is your typical timeline for completing a project?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Project timelines vary depending on complexity and scope. A simple landing page might take 1-2 weeks, while a complex web application could take 2-3 months. During our initial consultation, I'll provide a detailed timeline based on your specific requirements.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What is your pricing structure?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>I offer both fixed-price project rates and hourly billing depending on the nature of the work. For most client projects, I prefer a fixed-price approach based on clear requirements. This provides you with budget certainty. I'm happy to provide a detailed quote after understanding your project needs.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you provide ongoing maintenance and support?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, I offer maintenance packages for websites and applications I've built. These typically include regular updates, security patches, performance monitoring, and content updates. We can discuss a maintenance plan that suits your needs once your project is complete.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What information do you need to start a project?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>To get started, I'll need a clear description of your project goals, target audience, desired features, and any design preferences. Examples of websites or applications you like can also be helpful. The more detailed information you provide, the more accurate my initial proposal will be.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <!-- Will be populated by Footer component -->
+  </footer>
+
+  <script>
+    // This script will be replaced by webpack's bundled scripts
+    // It's here just for reference of what needs to happen
+    document.addEventListener('DOMContentLoaded', () => {
+      // FAQ toggle functionality
+      const faqItems = document.querySelectorAll('.faq-item');
+      
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+          // Toggle current item
+          item.classList.toggle('active');
+          
+          // Update toggle icon
+          const toggle = item.querySelector('.faq-toggle');
+          toggle.textContent = item.classList.contains('active') ? '-' : '+';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

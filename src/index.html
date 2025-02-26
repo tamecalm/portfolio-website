@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio showcasing web development projects, skills, and experience.">
+  <meta name="keywords" content="web developer, portfolio, frontend, backend, full-stack, projects">
+  <meta name="author" content="Your Name">
+  
+  <title>Your Name | Web Developer Portfolio</title>
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Your Name | Web Developer Portfolio">
+  <meta property="og:description" content="Professional portfolio showcasing web development projects, skills, and experience.">
+  <meta property="og:image" content="https://yourdomain.com/assets/images/profile.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Your Name | Web Developer Portfolio">
+  <meta name="twitter:description" content="Professional portfolio showcasing web development projects, skills, and experience.">
+  <meta name="twitter:image" content="https://yourdomain.com/assets/images/profile.jpg">
+  
+  <!-- Favicon will be handled by webpack copy plugin -->
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <!-- Will be populated by Header component -->
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Hi, I'm <span class="highlight">Your Name</span></h1>
+          <h2 class="hero-subtitle">Full-Stack Web Developer</h2>
+          <p class="hero-description">
+            I build responsive, user-friendly websites and applications with modern technologies.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="/contact.html" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./assets/images/profile.jpg" alt="Your Name - Profile Photo" class="profile-image">
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="featured-projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Check out some of my latest work</p>
+        </div>
+        <div class="projects-grid" id="featured-projects-grid">
+          <!-- Will be populated dynamically from projects.json -->
+        </div>
+        <div class="section-footer">
+          <a href="/projects.html" class="btn btn-tertiary">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Skills</h2>
+          <p class="section-subtitle">Technologies I work with</p>
+        </div>
+        <div class="skills-container">
+          <!-- Will be populated dynamically from skills.json -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Testimonials</h2>
+          <p class="section-subtitle">What people say about working with me</p>
+        </div>
+        <div class="testimonials-slider" id="testimonials-container">
+          <!-- Will be populated dynamically from testimonials.json -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact-cta" class="section contact-cta-section">
+      <div class="container">
+        <h2 class="cta-title">Ready to start your project?</h2>
+        <p class="cta-description">Let's discuss how I can help bring your ideas to life.</p>
+        <a href="/contact.html" class="btn btn-primary btn-large">Get In Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <!-- Will be populated by Footer component -->
+  </footer>
+
+  <!-- Scripts will be injected by Webpack -->
+</body>
+</html>
