@@ -1,0 +1,377 @@
+// Header Styles
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    
+    &__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+    }
+    
+    &__logo {
+      display: flex;
+      align-items: center;
+      
+      img {
+        height: 40px;
+        transition: all 0.3s ease;
+      }
+      
+      h1 {
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #fff;
+        margin-left: 0.5rem;
+        transition: all 0.3s ease;
+      }
+    }
+    
+    &__nav {
+      display: flex;
+      align-items: center;
+      
+      @media (max-width: 991px) {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 280px;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 2rem;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+        
+        &.active {
+          right: 0;
+        }
+      }
+    }
+    
+    &__menu {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      
+      @media (max-width: 991px) {
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      &-item {
+        margin: 0 1rem;
+        position: relative;
+        
+        @media (max-width: 991px) {
+          margin: 0;
+          width: 100%;
+          
+          &:not(:last-child) {
+            border-bottom: 1px solid #eee;
+          }
+        }
+        
+        a {
+          display: block;
+          padding: 0.5rem 0;
+          color: #fff;
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 500;
+          transition: all 0.3s ease;
+          
+          @media (max-width: 991px) {
+            padding: 1rem 0;
+            color: #333;
+          }
+          
+          &:hover {
+            color: #0077b6;
+          }
+          
+          &.active {
+            position: relative;
+            
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: #0077b6;
+              
+              @media (max-width: 991px) {
+                bottom: -2px;
+              }
+            }
+          }
+        }
+        
+        // Dropdown
+        &-has-children {
+          position: relative;
+          
+          > a {
+            display: flex;
+            align-items: center;
+            
+            &::after {
+              content: '';
+              display: inline-block;
+              width: 8px;
+              height: 8px;
+              border-right: 2px solid;
+              border-bottom: 2px solid;
+              margin-left: 0.5rem;
+              transform: rotate(45deg);
+              transition: transform 0.3s ease;
+            }
+            
+            &.active::after {
+              transform: rotate(-135deg);
+            }
+          }
+        }
+        
+        &-dropdown {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          min-width: 200px;
+          background-color: #fff;
+          border-radius: 5px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+          padding: 1rem 0;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(10px);
+          transition: all 0.3s ease;
+          z-index: 10;
+          
+          @media (max-width: 991px) {
+            position: static;
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            box-shadow: none;
+            padding: 0 0 0 1rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            
+            &.active {
+              max-height: 500px;
+            }
+          }
+          
+          li {
+            list-style: none;
+            
+            a {
+              display: block;
+              padding: 0.5rem 1.5rem;
+              color: #333;
+              font-size: 0.95rem;
+              transition: all 0.3s ease;
+              
+              &:hover {
+                background-color: #f8f9fa;
+                color: #0077b6;
+              }
+            }
+          }
+        }
+        
+        &:hover {
+          .header__menu-item-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+    
+    &__actions {
+      display: flex;
+      align-items: center;
+      margin-left: 2rem;
+      
+      @media (max-width: 991px) {
+        margin-left: 0;
+        margin-top: 1.5rem;
+        width: 100%;
+      }
+      
+      &-button {
+        display: inline-block;
+        padding: 0.6rem 1.5rem;
+        background-color: #0077b6;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        
+        &:hover {
+          background-color: #005b8a;
+          transform: translateY(-3px);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        &:active {
+          transform: translateY(-1px);
+        }
+      }
+    }
+    
+    &__toggle {
+      display: none;
+      width: 28px;
+      height: 20px;
+      position: relative;
+      cursor: pointer;
+      z-index: 1001;
+      
+      @media (max-width: 991px) {
+        display: block;
+      }
+      
+      span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: 0.25s ease-in-out;
+        
+        &:nth-child(1) {
+          top: 0;
+        }
+        
+        &:nth-child(2), &:nth-child(3) {
+          top: 9px;
+        }
+        
+        &:nth-child(4) {
+          top: 18px;
+        }
+      }
+      
+      &.active {
+        span {
+          background-color: #333;
+          
+          &:nth-child(1) {
+            top: 9px;
+            width: 0;
+            left: 50%;
+          }
+          
+          &:nth-child(2) {
+            transform: rotate(45deg);
+          }
+          
+          &:nth-child(3) {
+            transform: rotate(-45deg);
+          }
+          
+          &:nth-child(4) {
+            top: 9px;
+            width: 0;
+            left: 50%;
+          }
+        }
+      }
+    }
+    
+    // Scrolled state
+    &--scrolled {
+      background-color: #fff;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      
+      .header__logo {
+        h1 {
+          color: #333;
+        }
+      }
+      
+      .header__menu-item {
+        a {
+          color: #333;
+        }
+      }
+      
+      .header__toggle {
+        span {
+          background-color: #333;
+        }
+      }
+    }
+    
+    // Transparent header option
+    &--transparent {
+      background-color: transparent;
+      
+      &.header--scrolled {
+        background-color: #fff;
+      }
+    }
+    
+    // Dark header option
+    &--dark {
+      background-color: #222;
+      
+      .header__logo {
+        h1 {
+          color: #fff;
+        }
+      }
+      
+      .header__menu-item {
+        a {
+          color: #fff;
+        }
+      }
+      
+      &.header--scrolled {
+        background-color: #222;
+        
+        .header__logo {
+          h1 {
+            color: #fff;
+          }
+        }
+        
+        .header__menu-item {
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  
+  // Fixed offset for when using a fixed header
+  .fixed-header-offset {
+    padding-top: 80px;
+  }
