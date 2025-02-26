@@ -1,0 +1,21 @@
+/**
+ * Main SCSS file - imports all partial files
+ */
+
+// Base styles and variables
+@import 'variables';
+@import 'base';
+@import 'typography';
+@import 'global';
+@import 'animations';
+
+// Component styles
+@import 'components/header';
+@import 'components/footer';
+@import 'components/buttons';
+@import 'components/hero';
+@import 'components/about';
+@import 'components/projects';
+@import 'components/contact';
+@import 'components/form';
+@import 'components/card';

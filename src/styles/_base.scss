@@ -1,0 +1,132 @@
+/**
+ * Base styles - resets, basic HTML elements
+ */
+
+// Reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// HTML and body base styling
+html {
+  font-size: $font-size-base;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: $font-weight-regular;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $bg-light;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Main content
+main {
+  flex: 1;
+}
+
+// Base styling for common HTML elements
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: $transition-base;
+  
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+
+// Remove default styling for buttons
+button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+// Basic form elements
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+// Container
+.container {
+  width: 100%;
+  padding-right: $spacing-md;
+  padding-left: $spacing-md;
+  margin-right: auto;
+  margin-left: auto;
+  
+  @media (min-width: $breakpoint-sm) {
+    max-width: $container-max-width-sm;
+  }
+  
+  @media (min-width: $breakpoint-md) {
+    max-width: $container-max-width-md;
+  }
+  
+  @media (min-width: $breakpoint-lg) {
+    max-width: $container-max-width-lg;
+  }
+  
+  @media (min-width: $breakpoint-xl) {
+    max-width: $container-max-width-xl;
+  }
+  
+  @media (min-width: $breakpoint-xxl) {
+    max-width: $container-max-width-xxl;
+  }
+}
+
+// Section base styling
+section {
+  padding: $spacing-xxl 0;
+  
+  @media (max-width: $breakpoint-md) {
+    padding: $spacing-xl 0;
+  }
+}
+
+// Error messages
+.error-message {
+  color: $error-color;
+  font-size: 0.875rem;
+  margin-top: $spacing-xs;
+}
+
+// Screen reader only elements (accessibility)
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

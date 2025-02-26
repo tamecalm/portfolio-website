@@ -1,0 +1,196 @@
+/**
+ * Typography styles
+ */
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-primary;
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+    margin-bottom: $spacing-md;
+    color: $dark-color;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    
+    @media (min-width: $breakpoint-md) {
+      font-size: 3rem;
+    }
+    
+    @media (min-width: $breakpoint-lg) {
+      font-size: 3.5rem;
+    }
+  }
+  
+  h2 {
+    font-size: 2rem;
+    
+    @media (min-width: $breakpoint-md) {
+      font-size: 2.5rem;
+    }
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    
+    @media (min-width: $breakpoint-md) {
+      font-size: 1.75rem;
+    }
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+    
+    @media (min-width: $breakpoint-md) {
+      font-size: 1.5rem;
+    }
+  }
+  
+  h5 {
+    font-size: 1.125rem;
+  }
+  
+  h6 {
+    font-size: 1rem;
+  }
+  
+  // Paragraphs
+  p {
+    margin-bottom: $spacing-md;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  // Links with underline animation
+  .animated-link {
+    position: relative;
+    display: inline-block;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $primary-color;
+      transform-origin: bottom right;
+      transition: transform 0.3s ease-out;
+    }
+    
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+  
+  // Text utilities
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-justify {
+    text-align: justify;
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .text-lowercase {
+    text-transform: lowercase;
+  }
+  
+  .text-capitalize {
+    text-transform: capitalize;
+  }
+  
+  .text-primary {
+    color: $primary-color;
+  }
+  
+  .text-secondary {
+    color: $secondary-color;
+  }
+  
+  .text-accent {
+    color: $accent-color;
+  }
+  
+  .text-light {
+    color: $text-light;
+  }
+  
+  .text-dark {
+    color: $dark-color;
+  }
+  
+  // Font weights
+  .font-light {
+    font-weight: $font-weight-light;
+  }
+  
+  .font-regular {
+    font-weight: $font-weight-regular;
+  }
+  
+  .font-medium {
+    font-weight: $font-weight-medium;
+  }
+  
+  .font-semibold {
+    font-weight: $font-weight-semibold;
+  }
+  
+  .font-bold {
+    font-weight: $font-weight-bold;
+  }
+  
+  // Section title styling
+  .section-title {
+    text-align: center;
+    margin-bottom: $spacing-xl;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 4px;
+      background-color: $primary-color;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: $border-radius-pill;
+    }
+  }
+  
+  // Highlight text
+  .highlight {
+    color: $primary-color;
+    position: relative;
+    display: inline-block;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 6px;
+      bottom: 5px;
+      left: 0;
+      background-color: rgba($primary-color, 0.2);
+      z-index: -1;
+    }
+  }
