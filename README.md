@@ -15,10 +15,6 @@ npm start  # or other appropriate usage command
 ## Known Issues
 **Note:** This project is currently in development and contains many bugs. We are actively working to resolve these issues.
 
-Some known issues include:
-- Issue 1: BUGS 
-- Issue 2: BUGS
-- Issue 3: AND BUGS
 
 ## Contributing
 Contributions are welcome! If you'd like to help improve this project, please feel free to:
@@ -34,6 +30,3 @@ Contributions are welcome! If you'd like to help improve this project, please fe
 4. Submit a pull request
 
 All pull requests will be reviewed accordingly. Please ensure your code follows the project's coding standards and includes appropriate tests.
-
-## Contact
-[+12027501557]
